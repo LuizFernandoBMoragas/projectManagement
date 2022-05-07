@@ -18,6 +18,7 @@ function App() {
       <imput className="name" />
       <label>Name: </label>
       <imput className="name" />
+      <button>Add To Project List</button>
     </div>
   );
 }

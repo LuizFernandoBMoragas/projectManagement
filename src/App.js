@@ -4,7 +4,13 @@ import react, { useState } from "react";
 
 function App() {
   const [name, setName] = useState("");
+  const [startDate, setStartDate] = useState(0);
+  const [endDate, setEndDate] = useState(0);
   const [date, setdate] = useState(0);
+  const [manager, setManager] = useState("");
+  const [description, setDescription] = useState("");
+  const [members, setMembersAmount] = useState(0);
+  const [client, setClient] = useState("");
 
   return (
     <div className="App">
@@ -14,13 +20,13 @@ function App() {
       <imput className="initial-date" />
       <label>End project: </label>
       <imput className="end-date" />
-      <label>Name: </label>
+      <label>Manager: </label>
       <imput className="name" />
-      <label>Name: </label>
+      <label>Descrição: </label>
       <imput className="name" />
-      <label>Name: </label>
+      <label>Members Amount: </label>
       <imput className="name" />
-      <label>Name: </label>
+      <label>Client: </label>
       <imput className="name" />
       <button>Add To Project List</button>
     </div>

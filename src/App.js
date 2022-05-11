@@ -1,7 +1,11 @@
 import "./App.css";
+import react, { useState } from "react";
 // import Axios from "axios";
 
 function App() {
+  const [name, setName] = useState("");
+  const [date, setdate] = useState(0);
+
   return (
     <div className="App">
       <label>Project Name: </label>
